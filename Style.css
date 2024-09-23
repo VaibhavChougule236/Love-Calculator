@@ -1,0 +1,72 @@
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    height: 400px;
+    width: 500px;
+    display: block;
+    background-color: rgb(247, 239, 243);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(112, 2, 112, 0.5);
+    border: 5px solid transparent;
+    border-image: conic-gradient(rgb(112, 63, 63), rgb(88, 88, 241), rgb(240, 240, 67), rgb(99, 234, 99), rgb(97, 237, 237)) 1;
+    text-align: center;
+    animation: rotate-border 2s ease-in-out infinite; /* Animation added */
+}
+
+@keyframes rotate-border {
+    0% {
+        border-image: conic-gradient(rgb(112, 63, 63), rgb(88, 88, 241), rgb(240, 240, 67), rgb(99, 234, 99), rgb(97, 237, 237)) 1;
+    }
+    100% {
+        border-image: conic-gradient(rgb(97, 237, 237), rgb(99, 234, 99), rgb(240, 240, 67), rgb(88, 88, 241), rgb(112, 63, 63)) 1;
+    }
+}
+
+h2{
+    color: rgb(245, 97, 210);
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.Love Calculator{
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(225, 70, 252);
+    
+}
+input[type="text"]{
+    width: 95%;
+    padding: 10px;
+    color: #ea54d3;
+    padding-top: 10px;
+    border-radius: 5px;
+
+}
+button{
+    padding: 7px 20px;
+    background-color: #f98fe9;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+#result{
+    color: #ea54d3;
+    margin-top: 20px;
+    font-size: 22px;
+}
